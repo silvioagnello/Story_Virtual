@@ -76,7 +76,7 @@ class _HomePageState extends State<HomePage> {
                   spacing: 5.0,
                   children: choices.map((c) {
                     return FilterChip(
-                      backgroundColor: Color(0xffeadaf9),
+                      backgroundColor: const Color(0xffeadaf9),
                       label: Text(
                         c.choice,
                         style: const TextStyle(fontSize: 12),
