@@ -5,11 +5,11 @@ class SplashPage extends StatelessWidget {
   const SplashPage({super.key});
 
   Future delay(context) async {
-    await Future.delayed(const Duration(milliseconds: 2000), () {
-      Navigator.push(
+    await Future.delayed(const Duration(seconds: 2), () {
+      Navigator.pushReplacement(
           context,
           MaterialPageRoute(
-            builder: (context) => HomePage(),
+            builder: (context) => const HomePage(),
           ));
     });
   }

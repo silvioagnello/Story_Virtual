@@ -4,8 +4,25 @@ import 'package:flutter/material.dart';
 
 void main() => runApp(const MyApp());
 
-class MyApp extends StatelessWidget {
+class MyApp extends StatefulWidget {
   const MyApp({super.key});
+
+  @override
+  State<MyApp> createState() => _MyAppState();
+}
+
+class _MyAppState extends State<MyApp> {
+  // @override
+  // void initState() {
+  //   super.initState();
+  //   Future.delayed(const Duration(seconds: 2), () {
+  //     Navigator.pushReplacement(
+  //         context,
+  //         MaterialPageRoute(
+  //           builder: (context) => const SplashPage(),
+  //         ));
+  //   });
+  // }
 
   @override
   Widget build(BuildContext context) {
@@ -17,10 +34,11 @@ class MyApp extends StatelessWidget {
         appBar: AppBar(
           // title: const Text('EGGS'),
         ),
-        body: HomePage() // SplashPage(),
+        body: SplashPage(), //HomePage() //
       ),
     );
   }
+
 }
 //
 // class FilterChipExample extends StatefulWidget {
